@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js"></script>
+</head>
+<body>
+
+    <form action="" id="theForm">
+        <fieldset>
+            <legend>Calculator</legend>
+            <div>
+                <label for="quantity">quantity</label>
+                <input type="number" name="quantity" id="quantity" min="0">
+            </div>
+            <div>
+                <label for="price">price per unit</label>
+                <input type="number" name="price" id="price" min="0">
+            </div>
+            <div>
+                <label for="tax">tax rate (%)</label>
+                <input type="number" step="0.001" name="tax" id="tax" min="0">
+                <!-- step是按箭頭會加減的數，也可處理有小數點的數值 -->
+            </div>
+            <div>
+                <label for="discount">discount</label>
+                <input type="number" name="discount" id="discount" min="0">
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="submit">
+                <!-- <button id="submit">Submit</button> -->
+                <!-- <input type="image"> --> 
+                <!-- 按圖片可以找到游標按下位置的座標 -->
+            </div>
+            <div id="total"></div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

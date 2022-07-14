@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攝氏華氏溫度轉換</title>
+</head>
+
+<body>
+    <!-- 
+        攝氏*9/5+32 =>華氏 
+        測試方式：1. -40度
+        2. 攝氏100 => 華氏212
+    -->
+    <!-- Celsius: <input type="text" id="celsius">
+    <button onclick="calculate()">Celsius => Fahrenheit</button>
+    <p id="result"></p>
+    <hr>
+    Fahrenheit: <input type="text" id="fahrenheit">
+    <button onclick="fahrenheit()">Fahrenheit => Celsius</button>
+    <p id="feedback"></p> -->
+
+    <script>
+        // function calculate(){
+        //     let celsius = document.getElementById('celsius').value;
+        //     let fahrenheit = celsius * 9 / 5 + 32;
+        //     console.log(fahrenheit);
+        //     result.innerText=`攝氏${celsius}度 == 華氏${fahrenheit}度`;
+        // }
+
+        // function fahrenheit(){
+        //     let fahrenheit=document.getElementById('fahrenheit').value;
+        //     let celsius=5 / 9 * (fahrenheit - 32);
+        //     feedback.innerText=`華氏${fahrenheit}度 == 攝氏${celsius}度`;
+        // }
+    </script>
+
+    <!-- seconds: <input type="text" id="seconds">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p> -->
+
+    <script>
+        // function calculate(){
+        //     let seconds=document.getElementById('seconds').value;
+        //     let minutes=parseInt(seconds / 60) ; //運算完只取整數
+        //     let left = seconds % 60;
+        //     result.innerText=`${seconds} 秒是 ${minutes} 分 ${left}秒`;
+        // }
+    </script>
+
+    <!-- <p id="result"></p> -->
+
+    <!-- 
+        Math.random(); 產生0(包含) ~ 1(不包含)之間的亂數
+        Math.random()==> 0 ~ 0.999999
+
+        公式： parseInt(Math.random() * 總個數) + 最小值 
+
+        產生介於1~100之間的整數亂數
+        Math.random()                    ==> 0 ~ 0.9999
+        Math.random() * 100              ==> 0 ~ 99.9999
+        parseInt(Math.random() * 100)    ==> 0 ~ 99
+        parseInt(Math.random() * 100)+1  ==> 1 ~ 100
+
+        ex. 產生 -5 ~ 5 之間的整數亂數
+        parseInt(Math.random() * 11) - 5  
+
+        ex. 產生 1 ~ 6 之間的整數亂數
+        parseInt(Math.random() * 6) + 1  
+     -->
+
+    <script>
+        // result.innerText = `${parseInt(Math.random() * 6) +1}`;
+    </script>
+
+
+    <p id="result"></p>
+
+    <script>
+        // 動態產生 1 ~ 1000 秒
+            let seconds=`${parseInt(Math.random() * 1000) +1}`
+            let minutes=parseInt(seconds / 60) ; //運算完只取整數
+            let left = seconds % 60;
+            result.innerText=`${seconds} 秒是 ${minutes} 分 ${left}秒`;
+    </script>
+
+
+
+</body>
+
+</html>
